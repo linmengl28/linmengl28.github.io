@@ -8,14 +8,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
 <body>
+    <!-- Background Elements -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
     <nav>
         <div class="container">
             <div class="logo">YourName</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -24,8 +28,8 @@
         <div class="container">
             <div class="header-content">
                 <h1>Hello, I'm <span>Your Name</span></h1>
-                <h2>Software Development Engineer</h2>
-                <p>I build robust, scalable, and efficient software solutions.</p>
+                <h2>Software Development Engineer building innovative solutions</h2>
+                <p>Specializing in creating scalable, efficient and user-focused applications</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -36,28 +40,28 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title fade-up">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate software developer with experience in building web applications, APIs, and scalable systems. I enjoy solving complex problems and creating elegant solutions.</p>
-                    <p>My journey in software development began [your story here], and I've since worked on a variety of projects ranging from [types of projects].</p>
-                    <p>When I'm not coding, you can find me [your interests/hobbies].</p>
+                <div class="about-text fade-up">
+                    <p>I'm a passionate software developer with experience in building web applications, APIs, and scalable systems. I enjoy solving complex problems and creating elegant solutions that deliver exceptional user experiences.</p>
+                    <p>My journey in software development began [your story here], and I've since worked on a variety of projects ranging from [types of projects]. I'm constantly learning and adapting to new technologies and methodologies.</p>
+                    <p>When I'm not coding, you can find me [your interests/hobbies]. I believe that maintaining a balanced life helps fuel creativity and problem-solving abilities.</p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
+                <div class="about-stats stagger-animation">
+                    <div class="stat stagger-item">
                         <i class="fas fa-code"></i>
                         <h3>Clean Code</h3>
-                        <p>I write clean, maintainable code with proper documentation.</p>
+                        <p>I write clean, maintainable code with proper documentation and testing.</p>
                     </div>
-                    <div class="stat">
+                    <div class="stat stagger-item">
                         <i class="fas fa-laptop-code"></i>
                         <h3>Problem Solving</h3>
-                        <p>I enjoy tackling complex problems with efficient solutions.</p>
+                        <p>I tackle complex problems with efficient, sustainable solutions.</p>
                     </div>
-                    <div class="stat">
+                    <div class="stat stagger-item">
                         <i class="fas fa-users"></i>
                         <h3>Team Player</h3>
-                        <p>I collaborate effectively with cross-functional teams.</p>
+                        <p>I collaborate effectively with cross-functional teams to deliver results.</p>
                     </div>
                 </div>
             </div>
@@ -66,45 +70,53 @@
 
     <section id="skills" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-content">
-                <div class="skill-category">
+            <h2 class="section-title fade-up">My Skills</h2>
+            <div class="skills-content stagger-animation">
+                <div class="skill-category stagger-item">
                     <h3>Languages</h3>
                     <div class="skill-items">
                         <div class="skill">JavaScript</div>
                         <div class="skill">Python</div>
                         <div class="skill">Java</div>
                         <div class="skill">C#</div>
+                        <div class="skill">TypeScript</div>
+                        <div class="skill">SQL</div>
                         <!-- Add or remove skills as needed -->
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category stagger-item">
                     <h3>Frontend</h3>
                     <div class="skill-items">
                         <div class="skill">HTML5</div>
                         <div class="skill">CSS3</div>
                         <div class="skill">React</div>
                         <div class="skill">Vue.js</div>
+                        <div class="skill">Angular</div>
+                        <div class="skill">Redux</div>
                         <!-- Add or remove skills as needed -->
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category stagger-item">
                     <h3>Backend</h3>
                     <div class="skill-items">
                         <div class="skill">Node.js</div>
                         <div class="skill">Express</div>
                         <div class="skill">Django</div>
                         <div class="skill">Spring Boot</div>
+                        <div class="skill">ASP.NET</div>
+                        <div class="skill">FastAPI</div>
                         <!-- Add or remove skills as needed -->
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category stagger-item">
                     <h3>Other</h3>
                     <div class="skill-items">
                         <div class="skill">Git</div>
                         <div class="skill">Docker</div>
                         <div class="skill">AWS</div>
                         <div class="skill">CI/CD</div>
+                        <div class="skill">Kubernetes</div>
+                        <div class="skill">GraphQL</div>
                         <!-- Add or remove skills as needed -->
                     </div>
                 </div>
@@ -114,68 +126,111 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
+            <h2 class="section-title fade-up">Featured Projects</h2>
+            <div class="projects-grid stagger-animation">
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card stagger-item">
                     <div class="project-img">
                         <img src="/api/placeholder/600/400" alt="Project 1">
                     </div>
                     <div class="project-info">
                         <h3>Project Name 1</h3>
-                        <p>Brief description of the project, technologies used, and your role in it.</p>
+                        <p>A comprehensive, user-friendly application that [brief description]. Developed with a focus on performance and scalability.</p>
                         <div class="project-tags">
                             <span>React</span>
                             <span>Node.js</span>
                             <span>MongoDB</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
                             <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card stagger-item">
                     <div class="project-img">
                         <img src="/api/placeholder/600/400" alt="Project 2">
                     </div>
                     <div class="project-info">
                         <h3>Project Name 2</h3>
-                        <p>Brief description of the project, technologies used, and your role in it.</p>
+                        <p>An innovative solution for [brief description]. Implemented advanced features such as [key features] for an enhanced user experience.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Django</span>
                             <span>PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
                             <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card stagger-item">
                     <div class="project-img">
                         <img src="/api/placeholder/600/400" alt="Project 3">
                     </div>
                     <div class="project-info">
                         <h3>Project Name 3</h3>
-                        <p>Brief description of the project, technologies used, and your role in it.</p>
+                        <p>A robust platform that [brief description]. Engineered to handle [specific challenges] while maintaining optimal performance.</p>
                         <div class="project-tags">
                             <span>Java</span>
                             <span>Spring Boot</span>
                             <span>MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
                             <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-up">Get In Touch</h2>
+            <div class="contact-content stagger-animation">
+                <div class="contact-info">
+                    <div class="contact-item stagger-item">
+                        <i class="fas fa-envelope floating"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    </div>
+                    <div class="contact-item stagger-item">
+                        <i class="fab fa-linkedin floating"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+                    </div>
+                    <div class="contact-item stagger-item">
+                        <i class="fab fa-github floating"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html></div>
         </div>
     </section>
 
